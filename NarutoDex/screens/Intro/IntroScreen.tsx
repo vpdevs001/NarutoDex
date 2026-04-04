@@ -24,7 +24,7 @@ const IntroScreen: React.FC = () => {
   const navigation = useNavigation<IntroScreenNavigationProp>();
 
   const player = useVideoPlayer(
-    require("../../assets/videos/video.mp4"),
+    require("../../../assets/videos/video.mp4"),
     (p) => {
       p.loop = true;
       p.play();
@@ -46,7 +46,7 @@ const IntroScreen: React.FC = () => {
 
       <View style={styles.overlay}>
         <Image
-          source={require("../../assets/images/naruto.png")}
+          source={require("../../../assets/images/naruto.png")}
           style={styles.logo}
         />
 
