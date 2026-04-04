@@ -16,7 +16,6 @@ import { useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import type { RootStackParamList } from "../../types/navigation-types";
 
-// ✅ No second generic needed — this screen isn't in RootStackParamList
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
 const KaraScreen = () => {
@@ -34,7 +33,6 @@ const KaraScreen = () => {
     try {
       setLoading(true);
 
-      // ✅ Correct endpoint and response key
       const response = await getData("kara", {
         page: pageNumber,
         limit: 20,

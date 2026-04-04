@@ -74,7 +74,7 @@ const AkatsukiScreen = () => {
       <FlatList
         data={filteredData}
         numColumns={2}
-        keyExtractor={(item) => item.id.toString()} // 🔥 fix
+        keyExtractor={(item) => item.id.toString()}
         contentContainerStyle={styles.listContent}
         columnWrapperStyle={styles.row}
         showsVerticalScrollIndicator={false}

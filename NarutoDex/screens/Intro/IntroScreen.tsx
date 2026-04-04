@@ -10,8 +10,8 @@ import {
 import { useVideoPlayer, VideoView } from "expo-video";
 import { useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import type { RootStackParamList } from "../types/navigation-types";
-import { Colors } from "../constants/colors";
+import type { RootStackParamList } from "../../types/navigation-types";
+import { Colors } from "../../constants/colors";
 
 type IntroScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     fontFamily: "Naruto",
     letterSpacing: 2,
     marginBottom: 6,
-    textAlign: 'center',
+    textAlign: "center",
     textShadowColor: "rgba(0,0,0,0.9)",
     textShadowOffset: { width: 0, height: 2 },
     textShadowRadius: 6,
